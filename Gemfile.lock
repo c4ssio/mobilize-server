@@ -1,3 +1,28 @@
+GIT
+  remote: git://github.com/c4ssio/mobilize-base.git
+  revision: 6fbc7122f222a9b752328170b010279e0310bf8e
+  specs:
+    mobilize-base (1.383)
+      actionmailer (= 3.1.1)
+      bson (= 1.8.4)
+      bson_ext (= 1.8.4)
+      google_drive (= 0.3.2)
+      mongoid (~> 3.0.0)
+      mongoid-grid_fs
+      popen4 (= 0.1.2)
+      rake
+      resque (= 1.24.0)
+
+GIT
+  remote: git://github.com/c4ssio/mobilize-ssh.git
+  revision: 81c8a1d86ee9d4d2a3a0ab20195389c3f33ec6c3
+  specs:
+    mobilize-ssh (1.383)
+      mobilize-base (= 1.383)
+      net-scp
+      net-ssh
+      net-ssh-gateway
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -36,71 +61,50 @@ GEM
       capistrano (>= 1.0.0)
     chronic (0.6.7)
     erubis (2.7.0)
-    faraday (0.8.7)
-      multipart-post (~> 1.1)
+    faraday (0.9.0)
+      multipart-post (>= 1.2, < 3)
     google_drive (0.3.2)
       nokogiri (>= 1.4.4, != 1.5.2, != 1.5.1)
       oauth (>= 0.3.6)
       oauth2 (>= 0.5.0)
-    highline (1.6.19)
+    highline (1.6.20)
     hike (1.2.3)
-    httpauth (0.2.0)
-    i18n (0.6.4)
-    jwt (0.1.8)
+    i18n (0.6.9)
+    jwt (0.1.11)
       multi_json (>= 1.5)
     mail (2.3.3)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    mime-types (1.23)
-    mini_portile (0.5.0)
-    mobilize-base (1.371)
-      actionmailer (= 3.1.1)
-      bson (= 1.8.4)
-      bson_ext (= 1.8.4)
-      google_drive (= 0.3.2)
-      mongoid (~> 3.0.0)
-      mongoid-grid_fs
-      popen4 (= 0.1.2)
-      rake
-      resque (= 1.24.0)
-    mobilize-hdfs (1.371)
-      mobilize-ssh (= 1.371)
-    mobilize-hive (1.371)
-      mobilize-hdfs (= 1.371)
-    mobilize-ssh (1.371)
-      mobilize-base (= 1.371)
-      net-scp
-      net-ssh
-      net-ssh-gateway
+    mime-types (1.25.1)
+    mini_portile (0.5.2)
     mongoid (3.0.23)
       activemodel (~> 3.1)
       moped (~> 1.2)
       origin (~> 1.0)
       tzinfo (~> 0.3.22)
-    mongoid-grid_fs (1.8.0)
+    mongoid-grid_fs (1.9.0)
       mime-types (~> 1.19)
       mongoid (~> 3.0)
     mono_logger (1.1.0)
-    moped (1.5.0)
-    multi_json (1.7.7)
-    multi_xml (0.5.4)
-    multipart-post (1.2.0)
-    net-scp (1.1.1)
+    moped (1.5.2)
+    multi_json (1.8.4)
+    multi_xml (0.5.5)
+    multipart-post (2.0.0)
+    net-scp (1.1.2)
       net-ssh (>= 2.6.5)
     net-sftp (2.1.2)
       net-ssh (>= 2.6.5)
-    net-ssh (2.6.7)
+    net-ssh (2.8.0)
     net-ssh-gateway (1.2.0)
       net-ssh (>= 2.6.5)
-    nokogiri (1.6.0)
+    nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
     oauth (0.4.7)
-    oauth2 (0.9.2)
-      faraday (~> 0.8)
-      httpauth (~> 0.2)
-      jwt (~> 0.1.4)
-      multi_json (~> 1.0)
+    oauth2 (0.9.3)
+      faraday (>= 0.8, < 0.10)
+      jwt (~> 0.1.8)
+      multi_json (~> 1.3)
       multi_xml (~> 0.5)
       rack (~> 1.2)
     open4 (1.3.0)
@@ -114,14 +118,14 @@ GEM
       rack (>= 0.4)
     rack-mount (0.8.3)
       rack (>= 1.0.0)
-    rack-protection (1.5.0)
+    rack-protection (1.5.2)
       rack
     rack-test (0.6.2)
       rack (>= 1.0)
-    rake (10.1.0)
-    redis (3.0.4)
-    redis-namespace (1.3.0)
-      redis (~> 3.0.0)
+    rake (10.1.1)
+    redis (3.0.7)
+    redis-namespace (1.4.1)
+      redis (~> 3.0.4)
     resque (1.24.0)
       mono_logger (~> 1.0)
       multi_json (~> 1.0)
@@ -139,10 +143,10 @@ GEM
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
     tilt (1.4.1)
-    treetop (1.4.14)
+    treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
-    tzinfo (0.3.37)
+    tzinfo (0.3.38)
     vegas (0.1.11)
       rack (>= 1.0.0)
     whenever (0.7.0)
@@ -155,6 +159,7 @@ PLATFORMS
 DEPENDENCIES
   capistrano (= 2.13.5)
   capistrano-ext (= 1.2.1)
-  mobilize-hive (= 1.371)
+  mobilize-base!
+  mobilize-ssh!
   rvm-capistrano (= 1.2.7)
   whenever (= 0.7.0)
