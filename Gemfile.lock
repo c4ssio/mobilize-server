@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/c4ssio/mobilize-base.git
-  revision: a148edd485231583c8fea79a1cd9485e761bbd26
+  revision: e0888badb01140e98a23d7217611de6843c1dbdb
   specs:
     mobilize-base (1.383)
       actionmailer (= 3.1.1)
@@ -15,7 +15,7 @@ GIT
 
 GIT
   remote: git://github.com/c4ssio/mobilize-ssh.git
-  revision: 2049b0ad17b0d17cc55322a907cd53d461593765
+  revision: 1b08c435c311c0677b0ea4a01bb114086db1bffd
   specs:
     mobilize-ssh (1.383)
       mobilize-base (= 1.383)
