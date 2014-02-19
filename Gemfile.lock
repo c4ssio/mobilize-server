@@ -15,7 +15,7 @@ GIT
 
 GIT
   remote: git://github.com/c4ssio/mobilize-ssh.git
-  revision: 1b08c435c311c0677b0ea4a01bb114086db1bffd
+  revision: 092a30c71dca13f725017a510bdb0fbb1f3dd1b6
   specs:
     mobilize-ssh (1.383)
       mobilize-base (= 1.383)
