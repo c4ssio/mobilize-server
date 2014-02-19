@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/c4ssio/mobilize-base.git
-  revision: 6fbc7122f222a9b752328170b010279e0310bf8e
+  revision: ab9bc25f9388fde433fb7abd97a5a1ea3cee61e9
   specs:
     mobilize-base (1.383)
       actionmailer (= 3.1.1)
@@ -15,7 +15,7 @@ GIT
 
 GIT
   remote: git://github.com/c4ssio/mobilize-ssh.git
-  revision: 81c8a1d86ee9d4d2a3a0ab20195389c3f33ec6c3
+  revision: 2049b0ad17b0d17cc55322a907cd53d461593765
   specs:
     mobilize-ssh (1.383)
       mobilize-base (= 1.383)
@@ -107,9 +107,9 @@ GEM
       multi_json (~> 1.3)
       multi_xml (~> 0.5)
       rack (~> 1.2)
-    open4 (1.3.0)
+    open4 (1.3.1)
     origin (1.1.0)
-    polyglot (0.3.3)
+    polyglot (0.3.4)
     popen4 (0.1.2)
       Platform (>= 0.4.0)
       open4 (>= 0.4.0)
